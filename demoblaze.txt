@@ -1,0 +1,749 @@
+//*[@id="signin2"]
+
+//*[@id="signin2"]
+
+
+//*[@id="signInModal"]/div
+
+//*[@id="signInModal"]/div/div/div[3]/button[2]
+
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DemoBlazeTest</groupId>
+  <artifactId>DemoBlazeTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>DemoBlazeTest</name>
+  <description>DemoBlazeTest</description>
+    
+  <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+<dependencies>
+ 
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.8.1</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.8.1</version>
+</dependency>
+
+ <!--  
+
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.6.1</version>
+    <scope>test</scope>
+</dependency>
+-->
+
+  
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.0.0-alpha-5</version>
+</dependency>
+
+
+
+
+
+
+
+
+<!--  
+<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+ <dependency>
+     <groupId>io.cucumber</groupId>
+       <artifactId>cucumber-junit</artifactId>
+      <version>5.7.0</version>
+    </dependency>
+
+-->
+
+</dependencies>
+</project>
+
+
+
+Okt 06, 2022 7:29:38 PM cucumber.api.cli.Main run
+WARNING: You are using deprecated Main class. Please use io.cucumber.core.cli.Main
+Okt 06, 2022 7:29:38 PM io.cucumber.core.cli.Main run
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict to suppress this warning
+
+@Register @PositiveRegister
+Scenario Outline: Register where Username and password is filled # src/test/resources/Features/registerdemoblaze.feature:13
+  Given I want to write a step with Username                     # null
+  When I check for the 5 in step                                 # null
+  Then message error appears                                     # null
+
+@Register @PositiveRegister
+Scenario Outline: Register where Username and password is filled # src/test/resources/Features/registerdemoblaze.feature:14
+  Given I want to write a step with Password                     # null
+  When I check for the 7 in step                                 # null
+  Then message error appears                                     # null
+
+@Register @NegativeRegisterWhereUsernameAndPasswordIsEmpty
+Scenario Outline: Register where Username and password is not filled # src/test/resources/Features/registerdemoblaze.feature:24
+  Given I want to write a step with Username                         # null
+  When I check for the 5 in step                                     # null
+  Then message error appears                                         # null
+
+@Register @NegativeRegisterWhereUsernameAndPasswordIsEmpty
+Scenario Outline: Register where Username and password is not filled # src/test/resources/Features/registerdemoblaze.feature:25
+  Given I want to write a step with Password                         # null
+  When I check for the 7 in step                                     # null
+  Then message error appears                                         # null
+
+@Register @NegativeRegisterWhereUserIsEmpty
+Scenario Outline: Register where Username is not filled # src/test/resources/Features/registerdemoblaze.feature:35
+  Given I want to write a step with Username            # null
+  When I check for the 5 in step                        # null
+  Then message error appears                            # null
+
+@Register @NegativeRegisterWhereUserIsEmpty
+Scenario Outline: Register where Username is not filled # src/test/resources/Features/registerdemoblaze.feature:36
+  Given I want to write a step with Password            # null
+  When I check for the 7 in step                        # null
+  Then message error appears                            # null
+
+@Register @NegativeRegisterWherePasswordIsEmpty
+Scenario Outline: Register where Password is not filled # src/test/resources/Features/registerdemoblaze.feature:46
+  Given I want to write a step with Username            # null
+  When I check for the 5 in step                        # null
+  Then message error appears                            # null
+
+@Register @NegativeRegisterWherePasswordIsEmpty
+Scenario Outline: Register where Password is not filled # src/test/resources/Features/registerdemoblaze.feature:47
+  Given I want to write a step with Password            # null
+  When I check for the 7 in step                        # null
+  Then message error appears                            # null
+
+Undefined scenarios:
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:13# Register where Username and password is filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:14# Register where Username and password is filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:24# Register where Username and password is not filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:25# Register where Username and password is not filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:35# Register where Username is not filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:36# Register where Username is not filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:46# Register where Password is not filled
+file:///D:/DemoBlazeTest/src/test/resources/Features/registerdemoblaze.feature:47# Register where Password is not filled
+
+8 Scenarios (8 undefined)
+24 Steps (24 undefined)
+0m0.346s
+
+
+You can implement missing steps with the snippets below:
+
+@Given("I want to write a step with Username")
+public void i_want_to_write_a_step_with_Username() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("I check for the {int} in step")
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("message error appears")
+public void message_error_appears() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Given("I want to write a step with Password")
+public void i_want_to_write_a_step_with_Password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+
+@Given("I am on registration modal")
+public void i_am_on_registration_modal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("I put {string} in username textbox")
+public void i_put_in_username_textbox(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("I put {string} in password textbox")
+public void i_put_in_password_textbox(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@Then("message error appears")
+public void message_error_appears() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("I empty username textbox")
+public void i_empty_username_textbox() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+@When("I empty password textbox")
+public void i_empty_password_textbox() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+
+//*[@id="loginusername"]
+
+
+//*[@id="signInModal"]/div/div/div[3]/button[2]
+
+
+username : aa
+password: abc
+
+This user already exist.
+
+username : jregan
+password: jregan
+
+
+add to cart button:
+
+//*[@id="tbodyid"]/div[2]/div/a
+    //*[@id="tbodyid"]/div[2]/div/a
+
+
+//*[@id="cartur"]
+
+//*[@id="totalp"]
+
+254670
+
+
+
+@Buy
+Feature: Buy items on demoblaze.com
+
+    @LoginToAddToCart
+    Scenario Outline: Do login before add to cart
+    Given I am on login page
+     When I put "<username>" in username login textbox
+    And I put "<password>" in password login textbox
+     And I press log in button
+    Then "<usernameonmenubar>" appears on the menubar 
+    And log out appears
+    Examples:
+    |username |password|usernameonmenubar|
+    |jregan   |jregan  |jregan           |
+    |jregan58 |jregan58|jregan58         |
+    
+    
+    @AddToCart1ItemWithLogin
+    Scenario Outline: Add to Cart 1 item wit login
+    Given I have login succesfully as <Username> and <Password>
+    When I am on "<url>" page
+    And I press Add to Cart button
+    Then message Product added appears
+    
+    
+    
+     Examples:
+    |Username |Password |url                                   |
+    |jregan   |jregan   |https://demoblaze.com/prod.html?idp_=7|
+   
+    
+    
+    @CheckPriceOnCartAfterAddToCart1ItemWithLogin
+     Scenario Outline: Check Price On cart after Add to Cart 1 item with login
+    Given I added "<product>" to cart as "<Username>"
+    When I go to cart page
+    Then price on cart is <price>
+     
+    Examples:
+    |Username|product                               |price|
+    |jregan  |https://demoblaze.com/prod.html?idp_=7|700  |
+    |jregan2 |https://demoblaze.com/prod.html?idp_=1|360  |
+    
+    @CartPlaceOrderWithoutBuy
+    Scenario: Place order cart page without buying anything
+    Given I am on the cart page
+    When I press place order button
+    Then modal place order appears
+    
+   
+
+jregan581
+//*[@id="tbodyid"]/div[1]/div/div/h4/a
+
+jregan582
+//*[@id="tbodyid"]/div[2]/div/div/h4/a
+//*[@id="navbarExample"]/ul/li[1]/a
+//*[@id="tbodyid"]/div[3]/div/div/h4/a
+
+
+jregan583
+
+
+//*[@id="name"]
+
+//*[@id="card"]
+
+
+/html/body/div[10]/div[7]/div/button
+
+
+
+15 Expert Tips for Using Cucumber
+
+https://azevedorafaela.com/tag/avoid-duplicate-steps-cucumber/
+
+
+Cucumber Duplicate and Ambiguous Step Definitions
+
+https://www.youtube.com/watch?v=K6v3FeJPmc0
+
+
+https://stackoverflow.com/questions/57299606/testng-by-default-disables-loading-dtd-from-unsecure-urls
+
+TestNG by default disables loading DTD from unsecure Urls
+
+Answers:
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"
+
+
+https://www.toolsqa.com/extent-report/extent-report-for-cucumber-testng-project/
+
+Extent report for Cucumber TestNG Project
+
+
+
+https://www.guru99.com/selenium-refresh-page.html
+
+Refresh Page using Selenium Webdriver
+
+driver.get("http://demo.guru99.com/selenium/guru99home/");
+driver.navigate().refresh();
+
+
+https://stackoverflow.com/questions/8533943/cucumber-fill-in-a-field-with-double-quote-in-it
+
+Cucumber: fill in a field with double quote in it
+
+Answers:
+
+While google'ing I just found an alternative solution which is (imho) more easy to understand (or reunderstand ;)). I'm using Java but I'm sure the same idea could be reused in your case..
+
+Instead of using this step definition:
+
+@Then("parameter \"(.*?)\" should contain \"(.*?)\"$")
+I use another escape char (from " to /):
+
+@Then("parameter \"(.*?)\" should contain /(.*?)/$")
+So I can write the feature using double quotes:
+
+Then parameter "getUsers" should contain /"name":"robert","status":"ACTIVE"/
+
+
+https://stackoverflow.com/questions/70711506/how-to-execute-test-runner-with-multiple-tags-in-cucumber
+
+How to execute test runner with multiple tags in Cucumber
+
+Answers:
+
+It was due to my wrong understanding of this tags handling. I thought that I need to join scenarios for execution by and but it's logical and so this tags = "@Test213 and @Test214"executes only scenarios which are annotated by both these tags and there are not any in my suite. If I want to run scenarios one by one I need to configure it like this 
+tags = "@Test213 or @Test214"
+
+
+
+#5 - Regular Expressions in #Cucumber 6 - Cucumber Expression vs Regular Expression (Latest 2022)
+
+https://www.youtube.com/watch?v=AxhfQV-6iqw
+
+
+
+#6 - Tags in #Cucumber BDD Framework (Latest 2020)
+
+https://www.youtube.com/watch?v=n2Kl30ZHK7k&t=439s
+
+
+https://stackoverflow.com/questions/24237987/how-to-execute-multiple-cucumber-feature-files-using-tags
+
+How to execute Multiple cucumber feature files using tags
+
+Answers:
+
+Example: Running scenarios which match @important OR @billing
+
+cucumber --tags @billing,@important
+Example: Running scenarios which match @important AND @billing
+
+cucumber --tags @billing --tags @important
+
+
+https://stackoverflow.com/questions/71328780/excluding-several-different-scenarios-in-cucumber-feature-file-with-tags
+
+Excluding several different scenarios in cucumber feature file with tags
+
+
+Answers:
+
+
+mvn clean test -Dcucumber.filter.tags="@tag1 and @tag2 and not (@ignore or @issue)"
+
+
+
+#12 - Scenario Outline with Examples keyword in #Cucumber (Data Driven Testing) - Latest Features
+
+https://www.youtube.com/watch?v=dJD5pu9ntAs
+
+
+https://stackoverflow.com/questions/60347033/cucumber-java-maven-webdrivermanager-bonigarcia-not-able-to-get-url-from-pro
+
+Cucumber Java (Maven) WebdriverManager (Bonigarcia) Not able to get URL from properties
+
+
+
+https://stackoverflow.com/questions/32272172/how-to-close-all-tabs-in-eclipse#:~:text=With%20Ctrl%20%2B%20W%20we%20can,files%20we%20want%20to%20close.
+
+How to close all tabs in eclipse?
+
+Answers:
+
+Ctrl+Shift+W is the short cut to close all tabs in eclipse.
+
+
+
+https://stackoverflow.com/questions/6111408/maven2-missing-artifact-but-jars-are-in-place
+
+Maven2: Missing artifact but jars are in place
+
+Answers:
+
+I had the same problem. Rich Seller's solution didn't work for my situation, I fixed it by cancel the Window -> Preferences -> Maven. Do not automatically update dependencies from remote repositories option, then right-clicking on the project and selecting Maven->Update Project.
+
+
+
+https://stackoverflow.com/questions/70600315/how-to-resovle-java-runtime-class-file-version-55-0-this-version-of-the-java
+
+How to resovle Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 error? [duplicate]
+
+
+
+https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment
+
+Class has been compiled by a more recent version of the Java Environment
+
+
+Class has been compiled by a more recent version of the Java Environment (class file version 53.0), this version of the Java Runtime only recognizes class file versions up to 52.0.
+
+Java Version: 8
+
+
+Answers:
+
+This is just a version mismatch. You have compiled your code using java version 9 and your current JRE is version 8. Try upgrading your JRE to 9.
+
+49 = Java 5
+50 = Java 6
+51 = Java 7
+52 = Java 8
+53 = Java 9
+54 = Java 10
+55 = Java 11
+56 = Java 12
+57 = Java 13
+58 = Java 14
+59 = Java 15
+60 = Java 16
+61 = Java 17
+62 = Java 18
+63 = Java 19
+
+
+https://stackoverflow.com/questions/17226816/how-can-i-find-the-error-which-causes-a-red-cross-on-the-projects-icon-in-eclip
+
+How can I find the error which causes a red cross on the project's icon in Eclipse?
+
+
+https://stackoverflow.com/questions/41272036/org-openqa-selenium-noalertpresentexception-no-alert-open
+
+org.openqa.selenium.NoAlertPresentException: no alert open
+
+Answers:
+
+try {
+    WebDriverWait wait = new WebDriverWait(driver, 2);
+    wait.until(ExpectedConditions.alertIsPresent());
+    Alert alert = driver.switchTo().alert();
+    System.out.println(alert.getText());
+    alert.accept();
+    Assert.assertTrue(alert.getText().contains("Thanks."));
+} catch (Exception e) {
+    //exception handling
+}
+
+
+
+until() and visibilityOfElementLocated() Commands - Selenium WebDriver
+
+https://www.youtube.com/watch?v=LYID-HaMLBs&t=607s
+
+
+
+https://stackoverflow.com/questions/58993667/webdriverwait-is-deprecated-in-selenium-4
+
+WebDriverWait is deprecated in Selenium 4
+
+Answers:
+
+Write it like this with Selenium 4 since what you tried to use is deprecated, as you said. First import.
+
+import java.time.Duration;
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+For fluent wait.
+
+ Wait<WebDriver> wait= new FluentWait<WebDriver>(driver)
+        .withTimeout(Duration.ofSeconds(30))
+        .pollingEvery(Duration.ofSeconds(5))
+        .ignoring(NoSuchElementException.class);
+WebDriverWait statement
+
+WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+
+
+https://stackoverflow.com/questions/47162567/how-to-gettext-from-h3-tag-in-selenium-webdriver-java
+
+How to getText from <h3> tag in Selenium WebDriver, Java
+
+
+https://stackoverflow.com/questions/73342745/selenium-how-to-get-all-the-h3-text-with-gettext
+
+Selenium: How to get all the h3 text with getText()
+
+
+
+
+selenium get h3 text site:stackoverflow.com
+
+https://www.google.com/search?q=selenium+get+h3+text+site:stackoverflow.com&sa=X&ved=2ahUKEwiAmYKH2c36AhVeT2wGHWQCDfUQrQIoBHoECBMQBQ&biw=1536&bih=754&dpr=1.25
+
+
+selenium get h3 text
+
+https://www.google.com/search?q=selenium+get+h3+text&source=hp&ei=q-I_Y72fKpmZseMP2sinqA8&iflsig=AJiK0e8AAAAAYz_wu1ygwhHcR-AEa36pxkR9SFq_rKpv&ved=0ahUKEwj9oOGD2c36AhWZTGwGHVrkCfUQ4dUDCAY&uact=5&oq=selenium+get+h3+text&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEIAEEBMyCAgAEB4QFhATOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6CwguEIAEELEDEIMBOggIABCxAxCDAToFCC4QgAQ6CwguEIAEEMcBEK8BOggIABCABBCxAzoICC4QgAQQsQM6BQgAEIAEOg0IABCABBCxAxBGEP8BOgoIABCABBCxAxAKOg0IABCABBCxAxCDARAKOgUILhCxAzoNCC4QgAQQxwEQ0QMQCjoGCAAQHhAWOgkIABCABBANEBNQAFijLmDeMGgAcAB4AIABlQGIAc4MkgEEMTUuM5gBAKABAQ&sclient=gws-wiz
+
+
+get link text selenium
+
+https://www.google.com/search?q=get+link+text+selenium&ei=x6g_Y_WpNLKPseMPqoWT8Ac&ved=0ahUKEwi1qY7poc36AhWyR2wGHarCBH4Q4dUDCA0&uact=5&oq=get+link+text+selenium&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAEIAEEBMyBwgAEIAEEBMyCAgAEB4QFhATMggIABAeEBYQEzIICAAQHhAWEBM6BQgAEIAEOgYIABAeEBY6CQgAEIAEEA0QEzoKCAAQHhAIEA0QE0oECEEYAEoECEYYAFAeWKYLYOINaABwAXgAgAGoAYgBxQaSAQM4LjGYAQCgAQHAAQE&sclient=gws-wiz
+
+
+
+https://stackoverflow.com/questions/35695647/get-link-text-selenium-java
+
+Get link text Selenium java
+
+
+
+
+How to Fix Selenium’s “Element Is Not Clickable at Point”
+
+https://www.testim.io/blog/selenium-element-is-not-clickable-at-point/
+
+
+https://stackoverflow.com/questions/35965693/selenium-webdriver-java-how-to-click-at-x-y-coordinates
+
+Selenium WebDriver JAVA: How to click at x,y coordinates?
+
+Answer:
+
+int xScrollPosition= 0; //enter your x co-ordinate
+int yScrollPosition= 0; //enter your y co-ordinate
+
+WebElement element = driver.findElement(By.xpath("YOUR LOCATOR"));
+
+JavascriptExecutor executor = (JavascriptExecutor) driver;
+executor.executeScript("window.scroll(" + xScrollPosition + ", " + yScrollPosition + ");");
+executor.executeScript("arguments[0].click();", element);
+
+
+click coordinates selenium
+
+https://www.google.com/search?q=click+coordinates+selenium&source=hp&ei=-HdBY4uEA9-PseMPvNOECA&iflsig=AJiK0e8AAAAAY0GGCLj7d9ebdwL5YfKMWXejgH7ZpPNI&oq=coordinate+selenium+&gs_lcp=Cgdnd3Mtd2l6EAMYAjIGCAAQHhAWMgYIABAeEBYyCAgAEB4QFhAKMgYIABAeEBY6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoKCC4QxwEQ0QMQQzoICC4QsQMQgwE6CwguEIAEELEDEIMBOgUIABCABDoICAAQgAQQsQM6CwguEIAEELEDENQCOgcIABCABBAKOgQIABBDOgcILhCABBAKOgcIABCABBATOggIABAeEBYQEzoKCAAQHhAWEAoQEzoICAAQHhAPEBZQAFjVG2DLJGgAcAB4AIABaIgB3gySAQQxOC4ymAEAoAEB&sclient=gws-wiz
+
+
+https://stackoverflow.com/questions/29508143/selenium-element-is-not-clickable-at-point
+
+Selenium - Element is not clickable at point
+
+Answers:
+
+There are a number of steps you can do in order to improve the stability while clicking on different UI elements:
+
+Explicitly wait for it's presence in the DOM
+Scroll into the element view
+Check if clickable
+Does it helped the stability?
+
+WebDriverWait wait = new WebDriverWait(driver, 3)
+JavascriptExecutor js = ((JavascriptExecutor) driver)
+
+//presence in DOM
+wait.until(ExpectedConditions.presenceOfElement(By.id("ID")));
+
+//scrolling
+WebElement element = driver.findElement(By.id("ID")));  
+js.executeScript("arguments[0].scrollIntoView(true);", element);
+
+//clickable
+wait.until(ExpectedConditions.elementToBeClickable(By.id("ID")));
+Further, if you will decide to override the default Actions interface with more customized one, you can use two type of clicks (for example): click() which will have all those stability steps and fastClick() which will be the default clicking without any varification.
+
+
+
+WebDriver driver = new ChromeDriver();
+        WebElement element = driver.findElement(By.id("ID"));
+        boolean clicked = false;
+        do{
+            try {
+                element.click();
+            } catch (WebDriverException e) {
+                continue;
+            } finally {
+                clicked = true;
+            }
+        } while (!clicked);
+
+
+
+
+https://stackoverflow.com/questions/44912203/selenium-web-driver-java-element-is-not-clickable-at-point-x-y-other-elem
+
+Selenium Web Driver & Java. Element is not clickable at point (x, y). Other element would receive the click
+
+Answers:
+
+WebDriverException: Element is not clickable at point (x, y)
+This is a typical org.openqa.selenium.WebDriverException which extends java.lang.RuntimeException.
+
+The fields of this exception are :
+
+BASE_SUPPORT_URL : protected static final java.lang.String BASE_SUPPORT_URL
+DRIVER_INFO : public static final java.lang.String DRIVER_INFO
+SESSION_ID : public static final java.lang.String SESSION_ID
+About your individual usecase, the error tells it all :
+
+WebDriverException: Element is not clickable at point (x, y). Other element would receive the click 
+It is clear from your code block that you have defined the wait as WebDriverWait wait = new WebDriverWait(driver, 10); but you are calling the click() method on the element before the ExplicitWait comes into play as in until(ExpectedConditions.elementToBeClickable).
+
+Solution
+The error Element is not clickable at point (x, y) can arise from different factors. You can address them by either of the following procedures:
+
+1. Element not getting clicked due to JavaScript or AJAX calls present
+
+Try to use Actions Class:
+
+WebElement element = driver.findElement(By.id("navigationPageButton"));
+Actions actions = new Actions(driver);
+actions.moveToElement(element).click().build().perform();
+2. Element not getting clicked as it is not within Viewport
+
+Try to use JavascriptExecutor to bring the element within the Viewport:
+
+WebElement myelement = driver.findElement(By.id("navigationPageButton"));
+JavascriptExecutor jse2 = (JavascriptExecutor)driver;
+jse2.executeScript("arguments[0].scrollIntoView()", myelement); 
+3. The page is getting refreshed before the element gets clickable.
+
+In this case induce ExplicitWait i.e WebDriverWait as mentioned in point 4.
+
+4. Element is present in the DOM but not clickable.
+
+In this case induce ExplicitWait with ExpectedConditions set to elementToBeClickable for the element to be clickable:
+
+WebDriverWait wait2 = new WebDriverWait(driver, 10);
+wait2.until(ExpectedConditions.elementToBeClickable(By.id("navigationPageButton")));
+5. Element is present but having temporary Overlay.
+
+In this case, induce ExplicitWait with ExpectedConditions set to invisibilityOfElementLocated for the Overlay to be invisible.
+
+WebDriverWait wait3 = new WebDriverWait(driver, 10);
+wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("ele_to_inv")));
+6. Element is present but having permanent Overlay.
+
+Use JavascriptExecutor to send the click directly on the element.
+
+WebElement ele = driver.findElement(By.xpath("element_xpath"));
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+executor.executeScript("arguments[0].click();", ele);
+
+
+
+https://stackoverflow.com/questions/38327049/check-if-element-is-clickable-in-selenium-java
+
+Check if element is clickable in Selenium Java
+
+Answer:
+
+WebDriverWait wait = new WebDriverWait(Scenario1Test.driver, 10); 
+WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@id='brandSlider']/div[1]/div/div/div/img)[50]")));
+element.click();
+
+
+
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+
+https://www.google.com/search?q=org.openqa.selenium.StaleElementReferenceException%3A+stale+element+reference%3A+element+is+not+attached+to+the+page+document&source=hp&ei=NlpBY8izGfuhseMP_M6sqA8&iflsig=AJiK0e8AAAAAY0FoRtKXbNnOQJiIEd_9SifNVDl171t8&ved=0ahUKEwjIpqOWv9D6AhX7UGwGHXwnC_UQ4dUDCAY&uact=5&oq=org.openqa.selenium.StaleElementReferenceException%3A+stale+element+reference%3A+element+is+not+attached+to+the+page+document&gs_lcp=Cgdnd3Mtd2l6EANQAFgAYL0BaABwAHgAgAEAiAEAkgEAmAEAoAECoAEB&sclient=gws-wiz
+
+
+stale element reference: element is not attached to the page document
+
+https://stackoverflow.com/questions/18225997/stale-element-reference-element-is-not-attached-to-the-page-document
+
+
+
+
+org.openqa.selenium.ElementClickInterceptedException:
+
+https://www.google.com/search?q=org.openqa.selenium.ElementClickInterceptedException%3A&source=hp&ei=3fs_Y7PsEamVseMPgqCCsAY&iflsig=AJiK0e8AAAAAY0AJ7b6jL74XVZbwpkw9C-NGAnr2-gpp&ved=0ahUKEwjzzpWH8c36AhWpSmwGHQKQAGYQ4dUDCAY&uact=5&oq=org.openqa.selenium.ElementClickInterceptedException%3A&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHjIECAAQHlAAWABg6gFoAHAAeACAAUSIAUSSAQExmAEAoAECoAEB&sclient=gws-wiz
+
+https://stackoverflow.com/questions/62260511/org-openqa-selenium-elementclickinterceptedexception-element-click-intercepted
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted error using Selenium and Java in headless mode
